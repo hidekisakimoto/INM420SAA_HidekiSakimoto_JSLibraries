@@ -1,22 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    background-color: white;
+    background-color: crimson;
     font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 header{
     background-color: white;
     width: 100%;
-    height: 50px;
+    height: 60px;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     display: flex;
+
+    padding: 8px 0;
 }
 
 header img{
     height: 48px;
+}
+
+header a{
+    text-decoration: none;
+    color: #1F1F1F;
+
+    transition: color 0.1s ease-in-out;
+}
+
+header a:hover{
+    color: crimson;
 }
 
 header > a{
@@ -27,4 +42,28 @@ header > nav{
     margin-right: 24px;
     display: flex;
     gap: 16px;
+}
+
+.block{
+    background-color: white;
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glide, .glidetrack, .glideslides, .glide__slide {
+    height: 100%;
+}
+
+.glide__slide img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+
+  object-position: 50% 20%;
 }
