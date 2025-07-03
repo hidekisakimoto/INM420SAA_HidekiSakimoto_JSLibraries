@@ -54,16 +54,14 @@ header > nav{
     justify-content: center;
 }
 
-.glide, .glidetrack, .glideslides, .glide__slide {
+.glide, .glide__track, .glide__slides, .glide__slide {
     height: 100%;
 }
 
 .glide__slide img {
   width: 100%;
-  height: auto;
-  max-height: 600px;
+  height: 100%;
   object-fit: cover;
-  display: block;
 
-  object-position: 50% 20%;
+  /* object-position: 50% 20%; */
 }
