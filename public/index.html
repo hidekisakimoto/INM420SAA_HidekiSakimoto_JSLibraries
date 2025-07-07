@@ -13,6 +13,9 @@
     <!-- GlideJS CSS -->
     <link rel="stylesheet" href="../assets/css/glide.core.min.css">
 
+    <!-- GlideJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
     <!-- Optional GlideJS CSS -->
     <link rel="stylesheet" href="../assets/css/glide.theme.min.css">
 
@@ -68,47 +71,14 @@
     <!-- Script JS -->
     <script src="../main.js"></script>
 
-    <!-- GlideJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- Glide JS -->
+    <script src="../assets/js/glide.js"></script>
 
-    <!-- GlideJS Script -->
-    <script>
-        new Glide('.glide',{
-        autoplay: 2000,
-        hoverpause: false,
-        perView: 1,
-        gap: 0,
-        keyboard: false,
-        swipeThreshold: false,
-        dragThreshold: false,
-    }).mount()
-    </script>
+    <!-- Leaflet JS -->
+    <script src="../assets/js/leaflet.js"></script>
 
-    <!-- Leaflet Script for the Map -->
-    <script>
-        var map = L.map('map').setView([43.63895326717817, -79.381906197839], 17);
-
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
-
-        var marker = L.marker([43.63895326717817, -79.381906197839]).addTo(map)
-
-        marker.bindPopup("<b>Hello!</b><br>This is our location!").openPopup();
-    </script>
-
-    <!-- GSAP Script for Smooth Scroll -->
-    <script>
-        gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-        
-        let smoother = ScrollSmoother.create({
-            wrapper: '#smooth-wrapper',
-            content: '#smooth-content',
-            smooth: 2,
-            effects: true,
-        });
-    </script>
+    <!-- GSAP JS -->
+    <script src="../assets/js/gsap.js"></script>
 
 </body>
 </html>
