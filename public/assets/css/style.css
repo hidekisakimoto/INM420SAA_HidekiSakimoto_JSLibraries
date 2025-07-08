@@ -74,10 +74,62 @@ header > nav{
   height: 100%;
   object-fit: cover;
 
-  object-position: 50% 20%;
+  /* object-position: 50% 20%; */
 }
 
 /* Leaflet Map */
 #map{
     height: 400px;
+}
+
+/* Calendar Style */
+#calendar{
+    min-height: 800px;
+    max-width: 1280px;
+    width: 100%;
+    padding: 64px 24px;
+}
+
+.calendar-block{
+    height: 100%;
+}
+
+/* Calendar Event Styles */
+:root{
+    --fc-event-bg-color: #1F1F1F;
+    --fc-event-border-color: #1F1F1F;
+    --fc-today-bg-color: rgb(202, 202, 202);
+
+    --fc-button-bg-color: #1f1f1f;
+    --fc-button-border-color: none;
+}
+
+.blog{
+    height: 100%;
+}
+
+.text{
+    width: 100%;
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 1280px;
+}
+
+.text h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.text h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text p{
+    font-size: 16px;
+    color: rgb(91, 91, 91);
 }
